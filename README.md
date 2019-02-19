@@ -46,7 +46,19 @@ void main() {
 
 ```
 
-```
+```js
+var createTransition = GlslTransition(canvas);
+var glslCode = "#ifdef GL_ES\nprecision highp float;\n#endif\n \n// ..."
+var transition = createTransition(glslCode);
+function animate() {
+  var uniforms = { smoothness: 0.3, opening: true };
+  var easing = function (x) {return x; }
+  var duration = 1000;
+  return transition(uniforms, duration.easing);
+}
+animate()
+  .then()
+
 ```
 
 ```
