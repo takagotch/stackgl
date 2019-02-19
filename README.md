@@ -61,7 +61,14 @@ animate()
 
 ```
 
-```
+```js
+// web-audio-analyser 
+// https://github.com/hughsk/web-audio-analyser/
+
+var audio = new Audio()
+audio.crossOrigin = 'Anonymous'
+audio.src = url
+
 ```
 
 
